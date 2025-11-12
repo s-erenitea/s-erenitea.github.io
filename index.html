@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serenitea - Your Daily Dose of Tea</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fcfcfc;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'sage-green': '#a8b698',
+                        'earth-orange': '#cc7722',
+                        'light-sage': '#e9f0e1',
+                        'dark-sage': '#718061',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="text-gray-800">
+
+    <header class="sticky top-0 bg-white/95 backdrop-blur-sm shadow-md z-10">
+        <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="#hero" class="text-2xl font-bold text-dark-sage flex items-center">
+                <i data-lucide="leaf" class="w-6 h-6 mr-2 text-earth-orange"></i>
+                Serenitea
+            </a>
+            <div class="space-x-4 hidden md:flex">
+                <a href="#about" class="text-gray-600 hover:text-earth-orange font-medium transition duration-150">Tentang Kami</a>
+                <a href="#menu" class="text-gray-600 hover:text-earth-orange font-medium transition duration-150">Menu Kami</a>
+                <a href="#contact" class="text-gray-600 hover:text-earth-orange font-medium transition duration-150">Hubungi</a>
+            </div>
+            <button class="md:hidden p-2 rounded-lg text-dark-sage hover:bg-light-sage transition duration-150" aria-label="Toggle Menu">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </nav>
+    </header>
+
+    <section id="hero" class="relative overflow-hidden pt-16 pb-24 md:pt-24 md:pb-32 bg-light-sage/50">
+        <div class="absolute inset-0 bg-sage-green opacity-10"></div>
+        
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col md:flex-row items-center justify-between gap-12">
+            <div class="md:w-1/2 text-center md:text-left">
+                <p class="text-lg font-semibold text-earth-orange mb-3 uppercase tracking-wider">Welcome to the magical world of Tea.</p>
+                <h2 class="text-5xl md:text-7xl font-extrabold text-dark-sage leading-tight mb-6">
+                    Your Daily Dose <span class="block text-earth-orange"> of Tea</span>
+                </h2>
+                <p class="text-2xl text-gray-600 font-medium mb-8">
+                    "Founder : Parisian, Reyno, Vidicius Jr."
+                </p>
+                <a href="#menu" class="inline-flex items-center justify-center px-8 py-3 border-2 border-earth-orange text-base font-semibold rounded-full shadow-lg bg-earth-orange text-white hover:bg-transparent hover:text-earth-orange transition duration-300 transform hover:scale-105">
+                    Lihat Menu Teh
+                    <i data-lucide="chevron-right" class="w-5 h-5 ml-2"></i>
+                </a>
+            </div>
+
+            <div class="md:w-1/2 relative">
+                <img src="https://placehold.co/600x450/a8b698/ffffff?text=Teh+Hangat+Seren" alt="Teh Hangat Seren" class="w-full h-auto object-cover rounded-3xl shadow-2xl border-4 border-white transform rotate-2 hover:rotate-0 transition duration-500 ease-in-out">
+                <div class="absolute bottom-0 right-0 p-3 bg-white rounded-tl-xl text-dark-sage font-bold text-sm shadow-inner opacity-90">
+                    #TeaTime
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 md:py-28 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 class="text-4xl font-bold text-dark-sage text-center mb-4">Filosofi Serenitea</h3>
+            <p class="text-xl text-gray-500 text-center max-w-3xl mx-auto mb-16">
+                Teh adalah minuman paling populer di Indonesia, teh telah menjadi salah satu budaya dan sudah menjadi kebiasaan di kalangan masyarakat Indonesia,
+                karena adanya perubahan iklim dan perubahan cuaca di Indonesia, minuman yang segar dan dingin membantu mengurangi kepanasan, melihat adanya banyak
+                potensi dari menjual minuman dikarenakan perubahan cuaca, dan telah menjadi kebiasaan di Indonesia, kami memilih untuk berjualan
+                teh segar dengan berbagai varian, seperti teh dengan extra buah segar, maupun teh yang memiliki khasiat untuk menenangkan, seperti chamomile tea, dan jasmine tea. 
+            </p>
+
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="p-6 bg-light-sage/30 rounded-xl shadow-lg hover:shadow-xl transition duration-300 text-center border-t-4 border-sage-green">
+                    <i data-lucide="leaf" class="w-10 h-10 text-sage-green mx-auto mb-4 fill-sage-green/20"></i>
+                    <h4 class="text-xl font-semibold text-dark-sage mb-2">Daun Pilihan Terbaik</h4>
+                    <p class="text-gray-600 text-sm">Hanya memilih daun teh dari perkebunan terbaik, dipetik pada waktu yang tepat untuk menjamin aroma dan rasa maksimal.</p>
+                </div>
+                <div class="p-6 bg-light-sage/30 rounded-xl shadow-lg hover:shadow-xl transition duration-300 text-center border-t-4 border-sage-green">
+                    <i data-lucide="sun-moon" class="w-10 h-10 text-sage-green mx-auto mb-4"></i>
+                    <h4 class="text-xl font-semibold text-dark-sage mb-2">Momen Ketenangan</h4>
+                    <p class="text-gray-600 text-sm">Serenitea diracik untuk memberikan jeda sejenak dari hiruk pikuk, menjadi "daily dose" relaksasi Anda.</p>
+                </div>
+                <div class="p-6 bg-light-sage/30 rounded-xl shadow-lg hover:shadow-xl transition duration-300 text-center border-t-4 border-sage-green">
+                    <i data-lucide="dices" class="w-10 h-10 text-sage-green mx-auto mb-4"></i>
+                    <h4 class="text-xl font-semibold text-dark-sage mb-2">Rasa Unik & Berani</h4>
+                    <p class="text-gray-600 text-sm">Kami memadukan tradisi dengan inovasi, menciptakan campuran teh unik termasuk *blends* dengan rasa *daun rinjani*.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="menu" class="py-20 md:py-28 bg-sage-green/10">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 class="text-4xl font-bold text-dark-sage text-center mb-4">Menu Teh Unggulan (11 Varian)</h3>
+            <p class="text-xl text-gray-500 text-center max-w-3xl mx-auto mb-16">
+                Jelajahi pilihan teh klasik, segar, dan menenangkan dari Serenitea.
+            </p>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="bg-white rounded-xl shadow-xl border-t-4 border-earth-orange p-6 transform hover:-translate-y-1 transition duration-300">
+                    <span class="inline-block px-3 py-1 text-xs font-semibold rounded-full bg-light-sage text-dark-sage mb-2">Dasar</span>
+                    <h4 class="text-2xl font-bold text-gray-800 mb-2">Ice Tea (Teh Dingin)</h4>
+                    <p class="text-gray-600 text-sm mb-4">Teh hitam segar yang disajikan dingin. Pilihan termurah dan terbaik untuk meredakan dahaga.</p>
+                    <span class="text-lg font-extrabold text-earth-orange">Rp 12.000</span>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-xl border-t-4 border-sage-green p-6 transform hover:-translate-y-1 transition duration-300">
+                    <span class="inline-block px-3 py-1 text-xs font-semibold rounded-full bg-light-sage text-dark-sage mb-2">Buah Segar</span>
+                    <h4 class="text-2xl font-bold text-gray-800 mb-2">Lychee Tea</h4>
+                    <p class="text-gray-600 text-sm mb-4">Teh dengan aroma manis buah leci yang khas. Rasanya ringan dan menyegarkan.</p>
+                    <span class="text-lg font-extrabold text-earth-orange">Rp 16.000</span>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-xl border-t-4 border-sage-green p-6 transform hover:-translate-y-1 transition duration-300">
+                    <span class="inline-block px-3 py-1 text-xs font-semibold rounded-full bg-light-sage text-dark-sage mb-2">Asam Segar</span>
+                    <h4 class="text-2xl font-bold text-gray-800 mb-2">Lemon Tea</h4>
+                    <p class="text-gray-600 text-sm mb-4">Perpaduan klasik teh hitam dan perasan lemon asli. Rasanya asam, manis, dan sangat segar.</p>
+                    <span class="text-lg font-extrabold text-earth-orange">Rp 16.000</span>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-xl border-t-4 border-earth-orange p-6 transform hover:-translate-y-1 transition duration-300">
+                    <span class="inline-block px-3 py-1 text-xs font-semibold rounded-full bg-light-sage text-dark-sage mb-2">Berry</span>
+                    <h4 class="text-2xl font-bold text-gray-800 mb-2">Raspberry Tea</h4>
+                    <p class="text-gray-600 text-sm mb-4">Teh dengan infusi raspberry, menawarkan rasa manis asam yang cerah.</p>
+                    <span class="text-lg font-extrabold text-earth-orange">Rp 18.000</span>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-xl border-t-4 border-earth-orange p-6 transform hover:-translate-y-1 transition duration-300">
+                    <span class="inline-block px-3 py-1 text-xs font-semibold rounded-full bg-light-sage text-dark-sage mb-2">Berry</span>
+                    <h4 class="text-2xl font-bold text-gray-800 mb-2">Blueberry Tea</h4>
+                    <p class="text-gray-600 text-sm mb-4">Infusi teh dengan ekstrak blueberry yang kaya antioksidan dan rasa buah yang lembut.</p>
+                    <span class="text-lg font-extrabold text-earth-orange">Rp 18.000</span>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-xl border-t-4 border-sage-green p-6 transform hover:-translate-y-1 transition duration-300">
+                    <span class="inline-block px-3 py-1 text-xs font-semibold rounded-full bg-light-sage text-dark-sage mb-2">Klasik</span>
+                    <h4 class="text-2xl font-bold text-gray-800 mb-2">Black Tea</h4>
+                    <p class="text-gray-600 text-sm mb-4">Teh hitam murni dengan rasa pekat dan aroma klasik yang kuat.</p>
+                    <span class="text-lg font-extrabold text-earth-orange">Rp 18.000</span>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-xl border-t-4 border-sage-green p-6 transform hover:-translate-y-1 transition duration-300">
+                    <span class="inline-block px-3 py-1 text-xs font-semibold rounded-full bg-light-sage text-dark-sage mb-2">Herbal</span>
+                    <h4 class="text-2xl font-bold text-gray-800 mb-2">Chamomile Tea</h4>
+                    <p class="text-gray-600 text-sm mb-4">Infusi bunga chamomile yang menenangkan, tanpa kafein. Cocok untuk relaksasi sore hari.</p>
+                    <span class="text-lg font-extrabold text-earth-orange">Rp 18.000</span>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-xl border-t-4 border-sage-green p-6 transform hover:-translate-y-1 transition duration-300">
+                    <span class="inline-block px-3 py-1 text-xs font-semibold rounded-full bg-light-sage text-dark-sage mb-2">Inovasi</span>
+                    <h4 class="text-2xl font-bold text-gray-800 mb-2">Modern Tea</h4>
+                    <p class="text-gray-600 text-sm mb-4">Racikan teh kekinian dengan sentuhan rasa unik yang belum pernah Anda coba sebelumnya.</p>
+                    <span class="text-lg font-extrabold text-earth-orange">Rp 18.000</span>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-xl border-t-4 border-earth-orange p-6 transform hover:-translate-y-1 transition duration-300">
+                    <span class="inline-block px-3 py-1 text-xs font-semibold rounded-full bg-light-sage text-dark-sage mb-2">Signature</span>
+                    <h4 class="text-2xl font-bold text-gray-800 mb-2">Mix Fruit Tea</h4>
+                    <p class="text-gray-600 text-sm mb-4">Campuran teh premium dengan potongan buah-buahan segar musiman. Kaya rasa dan vitamin.</p>
+                    <span class="text-lg font-extrabold text-earth-orange">Rp 21.000</span>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-xl border-t-4 border-earth-orange p-6 transform hover:-translate-y-1 transition duration-300">
+                    <span class="inline-block px-3 py-1 text-xs font-semibold rounded-full bg-light-sage text-dark-sage mb-2">Signature</span>
+                    <h4 class="text-2xl font-bold text-gray-800 mb-2">Orange Citrus</h4>
+                    <p class="text-gray-600 text-sm mb-4">Teh hitam dengan perpaduan rempah dan sari jeruk segar, menawarkan pengalaman rasa yang berani.</p>
+                    <span class="text-lg font-extrabold text-earth-orange">Rp 21.000</span>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-xl border-t-4 border-earth-orange p-6 transform hover:-translate-y-1 transition duration-300">
+                    <span class="inline-block px-3 py-1 text-xs font-semibold rounded-full bg-light-sage text-dark-sage mb-2">Signature</span>
+                    <h4 class="text-2xl font-bold text-gray-800 mb-2">Matcha Latte</h4>
+                    <p class="text-gray-600 text-sm mb-4">Bubuk teh hijau matcha premium yang disajikan dengan susu creamy. Rasa yang lembut dan berenergi.</p>
+                    <span class="text-lg font-extrabold text-earth-orange">Rp 21.000</span>
+                </div>
+
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="https://forms.gle/LpVtrpxhPbywqDBQ6" class="inline-flex items-center text-dark-sage hover:text-earth-orange font-semibold border-b-2 border-dark-sage hover:border-earth-orange transition duration-200">
+                    Pesan Produk
+                    <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-dark-sage text-white py-16 md:py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-10">
+            
+            <div>
+                <a href="#hero" class="text-3xl font-bold text-white flex items-center mb-4">
+                    <i data-lucide="leaf" class="w-7 h-7 mr-2 text-earth-orange"></i>
+                    Seren
+                </a>
+                <p class="text-sage-green text-sm">
+                    "Your Daily Dose of Tea"
+                </p>
+            </div>
+
+            <div>
+                <h5 class="text-lg font-semibold text-earth-orange mb-4">Akses Cepat</h5>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#about" class="hover:text-light-sage transition duration-150">Tentang Seren</a></li>
+                    <li><a href="#menu" class="hover:text-light-sage transition duration-150">Katalog Teh</a></li>
+                    <li><a href="#" class="hover:text-light-sage transition duration-150">Promo Terbaru</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h5 class="text-lg font-semibold text-earth-orange mb-4">Hubungi Kami</h5>
+                <ul class="space-y-3 text-sm">
+                    <li><i data-lucide="mail" class="w-4 h-4 mr-2 text-sage-green inline-block align-middle"></i> serenitea.id@email.com</li>
+                    <li class="flex items-center">
+                        <i data-lucide="phone" class="w-4 h-4 mr-2 text-sage-green"></i>
+                        +62 811-1532-205
+                    </li>
+                    <li class="flex items-center">
+                        <i data-lucide="map-pin" class="w-4 h-4 mr-2 text-sage-green"></i>
+                        9 Alexandrite, Sekolah Karakter, Podomoro, Indonesia
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h5 class="text-lg font-semibold text-earth-orange mb-4">Ikuti Kami</h5>
+                <div class="flex space-x-4">
+                    <a href="https://www.instagram.com/se.renitea" class="text-sage-green hover:text-earth-orange transition duration-150" aria-label="Instagram">
+                        <i data-lucide="instagram" class="w-6 h-6"></i>
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="mt-16 border-t border-sage-green/30 pt-8 text-center text-sm text-sage-green/80">
+            &copy; 2025 Serenitea, AgiNugroho, Parisian, Reyno, Vidicius Jr.
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
